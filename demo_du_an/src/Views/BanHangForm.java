@@ -1022,9 +1022,6 @@ public class BanHangForm extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this, "Chưa đủ tiền");
             return;
         }
-//        System.out.println(tienKhach);
-//        System.out.println(tongThanhToan);
-
         String maKhach = cbbKhachHang.getSelectedItem().toString();
         KhachHang kh = new KhachHang();
         if (maKhach.length() == 0) {
@@ -1050,7 +1047,7 @@ public class BanHangForm extends javax.swing.JPanel {
             }
             khachHangServices.updatetKhachHang(kh);
             JOptionPane.showMessageDialog(this, "thanh cong");
-            taoHoaDon(maHD, kh, lstHoaDonChiTiet, txtTienKhachDua.getText(), tienKhachDua, diemGiam);
+//            taoHoaDon(maHD, kh, lstHoaDonChiTiet, txtTienKhachDua.getText(), tienKhachDua, diemGiam);
         } else {
             JOptionPane.showMessageDialog(this, "that bai");
         }
